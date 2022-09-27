@@ -21,4 +21,3 @@ def test_function():
     driver.quit()
 
 
-test_function()
