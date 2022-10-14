@@ -108,3 +108,12 @@ while (i < 30):
         time.sleep(1)
 
 
+# Метод для прокрутки страницы
+
+def Scroll():
+    driver = webdriver.Chrome()
+    driver.get("https://SunInJuly.github.io/execute_script.html")
+    button = driver.find_element_by_tag_name("button")
+    x = button.location_once_scrolled_into_view
+    button.click()
+    assert True
