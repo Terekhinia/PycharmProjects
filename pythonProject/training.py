@@ -52,13 +52,13 @@
 # cond = a == 1 or a == 2 or a == 3
 #
 # if cond:  # если cond == True
-#     x = 0
+#     z = 0
 # else:
-#     x = 3
-# print(x)
+#     z = 3
+# print(z)
 # # тоже самое с помощью конструктора
-# x = 0 if cond else 3
-# print(x)
+# z = 0 if cond else 3
+# print(z)
 
 # A = [1] * 9
 # A.insert(0, 9)
@@ -78,7 +78,7 @@
 # print(z)
 # A = {1, 2, 3}
 # B = {4, 5, 6}
-# x = a.intersection(z)
+# z = a.intersection(z)
 # print(A.difference(B))
 
 

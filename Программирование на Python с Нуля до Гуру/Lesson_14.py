@@ -1,15 +1,15 @@
 
 '''
-def funk(x):
-    if x % 2 == 0:
-        x = True
+def funk(z):
+    if z % 2 == 0:
+        z = True
     else:
-        x = False
-    return x
+        z = False
+    return z
 
-x = input('Введите переменную\n')
-x = int(x)
-print(funk(x))
+z = input('Введите переменную\n')
+z = int(z)
+print(funk(z))
 '''
 
 def getmax(arr):

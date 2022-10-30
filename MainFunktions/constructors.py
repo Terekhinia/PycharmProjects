@@ -39,6 +39,24 @@ print_wrapper('kek')
 f = lambda x, y: x * y
 print(f(5, 2))
 
+    #Пример с filter()
+    my_list = [1, 3, 4, 6, 10, 11, 15, 12, 14]
+    new_list = list(filter(lambda x: (x%2 == 0) , my_list))
+    print(new_list)
+    """>>[4, 6, 10, 12, 14]"""
+
+    # Пример с map()
+    current_list = [1, 3, 4, 6, 10, 11, 15, 12, 14]
+    new_list = list(map(lambda x: x*2 , current_list))
+    print(new_list)
+    """>>[2, 6, 8, 12, 20, 22, 30, 24, 28]"""
+
+    # Пример с reduce()
+    from functools import reduce
+    current_list = [5, 15, 20, 30, 50, 55, 75, 60, 70]
+    summa = reduce((lambda x, y: x + y), current_list)
+    print(summa)
+    """>>380"""
 
 # Построчный вывод значений из словаря
 def return_values(dic):

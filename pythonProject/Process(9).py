@@ -10,10 +10,10 @@ class ClockThread(threading.Thread):
         self.interval = interval
 
     def run(self):
-        x = 11
-        while x > 1:
-            x -= 1
-            print(f'Number: {x}')
+        z = 11
+        while z > 1:
+            z -= 1
+            print(f'Number: {z}')
             time.sleep(self.interval)
 
 
@@ -35,11 +35,11 @@ results = []
 
 task1 = threading.Thread(
     target=handler,
-    kwargs={'finished': x for x in range(1, 3)}
+    kwargs={'finished': z for z in range(1, 3)}
 )
 task2 = threading.Thread(
     target=handler,
-    kwargs={'finished': x for x in range(3, 5)}
+    kwargs={'finished': z for z in range(3, 5)}
 )
 
 task1.start()
@@ -53,13 +53,13 @@ print('Value: ', handler())"""
 
 """import threading
 
-def doubler(x):
-    x = 11
-    while x > 1:
-        x -= 1
+def doubler(z):
+    z = 11
+    while z > 1:
+        z -= 1
     print(threading.currentThread().getName() + '\n')
 
-    print(f'Number: {x}')
+    print(f'Number: {z}')
 
 
 
@@ -79,10 +79,10 @@ class ClockThread(threading.Thread):
         self.interval = interval
 
     def run(self):
-        x = 11
-        while x > 1:
-            x -= 1
-            print(f'Number: {x}')
+        z = 11
+        while z > 1:
+            z -= 1
+            print(f'Number: {z}')
             time.sleep(self.interval)
 
     if __name__ == '__main__':
@@ -107,10 +107,10 @@ class Work(threading.Thread):
         self.interval = interval
 
     def run(self,):
-        x = 11
-        while x > 6:
-            x -= 1
-            print(f'({threading.currentThread().getName()}) Number: {x}')
+        z = 11
+        while z > 6:
+            z -= 1
+            print(f'({threading.currentThread().getName()}) Number: {z}')
             time.sleep(self.interval)
 
 
@@ -120,13 +120,13 @@ class Wor(threading.Thread):
         self.interval = interval
 
     def run(self,):
-        x = 6
-        while x > 1:
-            x -= 1
-            print(f'({threading.currentThread().getName()}) Number: {x}')
+        z = 6
+        while z > 1:
+            z -= 1
+            print(f'({threading.currentThread().getName()}) Number: {z}')
             time.sleep(self.interval)
 
-for x in range(0,1):
+for z in range(0,1):
     t1 = Work(0.3)
     t2 = Wor(0.3)
     t1.start()

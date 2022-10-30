@@ -3,36 +3,36 @@ inp = input("Введите размер массива\n")
 inp = int(inp)
 w = 0
 while w <= int(inp):
-    x = input("наполните массив\n")
+    z = input("наполните массив\n")
 
-    mas = [int(x) for n in range(0, inp)]
+    mas = [int(z) for n in range(0, inp)]
     w += 1
 
 
 z = 0
-for x in range(0, 101, 2):
-    z = x + z
-    print(x)
+for z in range(0, 101, 2):
+    z = z + z
+    print(z)
 print('Сумма всех четных от 0 до 100 включительно =', z)
 """
 
-"""x = 'python'
-print(x[1:2])
+"""z = 'python'
+print(z[1:2])
 
 s = 'bfgshbkis'
 
 print(s[-2:2:-2])"""
 
 
-"""def f(x):
-    for y in xrange(2, x):
-        if x % y == 0: return 0
+"""def f(z):
+    for y in xrange(2, z):
+        if z % y == 0: return 0
     return 1
 print filter(f, xrange(2, 100))"""
 
 """number = [0, 99, 100, 53, 44, 23, 4, 8, 16, 15, 77, 51]
-def f(x):
-        if x < 50 and (x % 2) == 0 : return 0
+def f(z):
+        if z < 50 and (z % 2) == 0 : return 0
         else:
              return 1
 
@@ -40,8 +40,8 @@ h = filter(f, number)
 print(list(h))"""
 
 """number = [0, 99, 100, 53, 44, 23, 4, 8, 16, 15, 77, 51]
-def f(x):
-        if (x % 2) != 0 and x > 50 : return 1
+def f(z):
+        if (z % 2) != 0 and z > 50 : return 1
         else:
              return 0
 
