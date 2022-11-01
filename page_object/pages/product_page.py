@@ -6,7 +6,7 @@ class ProductPage(BasePage):
     def click_button_cart(self):
         button_cart = self.browser.find_element(*ProductPageLocators.BUTTON_BASKET)
         button_cart.click()
-        self.solve_quiz_and_get_code()
+        # self.solve_quiz_and_get_code()
 
     def get_name_product(self):
         name_product = self.browser.find_element(*ProductPageLocators.NAME_PRODUCT)
