@@ -6,4 +6,4 @@ def test_guest_should_see_login_link(browser):
     page = ProductPage(browser, url)
     page.open()
     page.click_button_cart()
-    page.should_not_be_success_message()
+    page.success_message_should_disappear()
