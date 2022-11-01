@@ -23,3 +23,7 @@ class ProductPage(BasePage):
     def get_price_product_in_cart(self):
         name_price_in_cart = self.browser.find_element(*ProductPageLocators. PRICE_PRODUCT_IN_CART)
         return name_price_in_cart.text
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+           "Сообщение об успехе отображается, но не должно"
