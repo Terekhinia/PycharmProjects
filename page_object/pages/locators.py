@@ -1,11 +1,15 @@
 from selenium.webdriver.common.by import By
-from .base_page import BasePage
 
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BUTTON_SEE_BASKET = (By.XPATH, '//a[contains(text(),"Посмотреть корзину")]')
 
 class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    SECTION_ALLPRODUCTS = (By.XPATH, '//a[contains(text(),"Все товары")]')
 
-class LoginPageLocators(BasePage):
+class LoginPageLocators():
     LOGIN_FORM = (By.ID, "login_form")
     REGISTER_FORM = (By.ID, "register_form")
 
@@ -16,3 +20,7 @@ class ProductPageLocators():
     NAME_PRODUCT_IN_CART = (By.XPATH, '//*[@id="messages"]/div[1]/div/strong')
     PRICE_PRODUCT_IN_CART = (By.XPATH, '//*[@id="messages"]/div[3]/div/p[1]/strong')
     SUCCESS_MESSAGE = (By.XPATH, '//*[@id="messages"]/div[1]/div')
+    ITEMS = (By.CLASS_NAME, "row")
+
+class BasketPageLocators():
+    STATUS_BASKET = (By.XPATH, '//p[contains(text(),"Ваша корзина пуста")]')

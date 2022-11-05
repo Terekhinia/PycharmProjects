@@ -31,3 +31,7 @@ class ProductPage(BasePage):
     def success_message_should_disappear(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
            "Сообщение об успехе не исчезает, а должно"
+
+    def click_first_item(self):
+        first_item = self.browser.find_elements(*ProductPageLocators.ITEMS)
+        first_item[0].click()
