@@ -6,7 +6,6 @@ class ProductPage(BasePage):
     def click_button_cart(self):
         button_cart = self.browser.find_element(*ProductPageLocators.BUTTON_BASKET)
         button_cart.click()
-        # self.solve_quiz_and_get_code()
 
     def get_name_product(self):
         name_product = self.browser.find_element(*ProductPageLocators.NAME_PRODUCT)
@@ -35,3 +34,9 @@ class ProductPage(BasePage):
     def click_first_item(self):
         first_item = self.browser.find_elements(*ProductPageLocators.ITEMS)
         first_item[0].click()
+
+    def check_name_product_to_page_product(self, name_product, name_product_in_cart):
+        assert name_product == name_product_in_cart
+
+    def check_name_price_to_page_product(self, name_price, name_price_in_cart):
+        assert name_price == name_price_in_cart
