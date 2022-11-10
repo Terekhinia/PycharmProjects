@@ -11,7 +11,7 @@ def test_function():
     Username_input = driver.find_element('name', 'username')
     Username_input.send_keys('Ivan.Terekhin')
     Password_input = driver.find_element('name', 'password')
-    Password_input.send_keys('MannX504')
+    Password_input.send_keys('******')
     Button_Continue = driver.find_element('xpath', '//button[@type="submit"]')
     Button_Continue.click()
     time.sleep(2)
