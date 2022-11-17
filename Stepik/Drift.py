@@ -1,12 +1,3 @@
-
-
-# class Student:
-#     name = 'unknown' # class attribute
-#     def __init__(self):
-#         self.age = 20  # instance attribute
-#
-#     @classmethod
-#     def tostring(cls):
-#         print('Student Class Attributes: name=',cls.name)
-
-
+import math
+fun = lambda x : 1 if x == 1 else math.ceil(math.sinh(fun (x-1)))
+print(fun(5))

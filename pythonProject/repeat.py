@@ -8,12 +8,12 @@ while i < 10:
 #8
 """
 a = str(0)
-x = int(0)
+z = int(0)
 while True:
-      x = int(a) + x
+      z = int(a) + z
       a = input("Введите число ")
       if a == "=":
-         print("Сумма = ", x)
+         print("Сумма = ", z)
          a = 0
          continue
       if a == "exit" or a == "quit":
@@ -35,23 +35,23 @@ else:
 """
 #10
 """array = [1, 5, 7, 10, 2]
-x = 0
+z = 0
 z = 0
 for n in array:
     z += 1
-    x = n + x
-print(x)
-print(int(x/z))
+    z = n + z
+print(z)
+print(int(z/z))
 
 
-x = 0
+z = 0
 z = 0
 arr = [i for i in range(1, 10)]
 for n in arr:
     z += 1
-    x = n + x
-print(x)
-print(int(x/z))
+    z = n + z
+print(z)
+print(int(z/z))
 """
 
 #11
@@ -69,9 +69,9 @@ while n < len(arr):
 myset = set(arr)
 print(myset)
 z = 0
-for x in myset:
-    z = x + z
-    print(x)
+for z in myset:
+    z = z + z
+    print(z)
 print("Сумма =", z)
 myset = list(set(arr))
 print(myset)
@@ -80,8 +80,8 @@ print(myset)
 """
 inp = input("Введите произвольную строку: ")
 mytuple = tuple(inp)
-for x in mytuple:
-    print(x)"""
+for z in mytuple:
+    print(z)"""
 
 #13
 """
@@ -105,19 +105,19 @@ print(funk(n))'''
 
 """def lst(*arr):
     max = int()
-    for x in arr:
-        if x > max:
-            max = x
+    for z in arr:
+        if z > max:
+            max = z
     return max
 print(lst(0, 10, 2, 13))"""
 
 '''def bigsum(*num):
-    x = 0
+    z = 0
     z = 0
     for n in num:
-        x += 1
+        z += 1
         z += n
-    return z/x
+    return z/z
 print(bigsum(1, 5, 6))'''
 
 #15
@@ -131,9 +131,9 @@ print(my.getsum())'''
 
 #17
 """
-x = int(input('Введите число - '))
+z = int(input('Введите число - '))
 try:
-    print(x/0)
+    print(z/0)
 except ZeroDivisionError:
     print('Бесконечность')"""
 

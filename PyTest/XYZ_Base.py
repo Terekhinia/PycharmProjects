@@ -37,10 +37,10 @@ class BasePage:
         return i + 1
 
     # def serch_namber_name(self, lst_names, name):
-    #     x = 0
-    #     while lst_names[x] != name:
-    #         x += 1
-    #     return x + 1
+    #     z = 0
+    #     while lst_names[z] != name:
+    #         z += 1
+    #     return z + 1
 
     def names_cycle_text(self, line):
         for element in self.driver.find_elements_by_xpath(line):

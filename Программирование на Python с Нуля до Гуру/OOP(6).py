@@ -2,15 +2,15 @@
     print(a)
 
 class Class_name:
-    x = 1
+    z = 1
     y = 1
     func = output
     def __init__(self, nev_x, nev_y):
-        self.x = nev_x
+        self.z = nev_x
         self.y = nev_y
 
-x = Class_name(10, 10)
-x.func(100)"""
+z = Class_name(10, 10)
+z.func(100)"""
 
 
 

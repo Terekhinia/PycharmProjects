@@ -62,18 +62,18 @@ class Click_button(BasePage):
 
 class Work_Drop_Down_list(BasePage):
 
-    # def sortout_Drop_Down_list(self, browser, drop, x):  # x - № элемента который нужно выбрать из выпадающего списка
+    # def sortout_Drop_Down_list(self, browser, drop, z):  # z - № элемента который нужно выбрать из выпадающего списка
     #
     #     xyz_main_drop = Drop_Down_List(browser)
     #     drop.click()
     #     i = 0
-    #     while i != x:
+    #     while i != z:
     #         drop.send_keys(Keys.DOWN)
     #         i += 1
     #     drop.send_keys(Keys.ENTER)
 
 
-    def sortout_Drop_Down_list_customer_name(self, browser, x):  # x - № элемента который нужно выбрать из выпадающего списка
+    def sortout_Drop_Down_list_customer_name(self, browser, x):  # z - № элемента который нужно выбрать из выпадающего списка
 
         xyz_main_drop = Drop_Down_List(browser)
         drop_down_customer_name = xyz_main_drop.Drop_Down_List_Customer_Name()
